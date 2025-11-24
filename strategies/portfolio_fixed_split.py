@@ -2,7 +2,7 @@ import pandas as pd
 from typing import List, Dict
 from service.data_fetcher import get_nav_history
 from service.parser import nav_json_to_df
-from strategies.sip import simulate_sip, _ensure_nav_df
+from strategies.sip import simulate_sip
 from strategies.lumpsum import simulate_lumpsum
 
 def _simulate_one_asset_from_api(scheme_code, monthly_amount, sip_day, start_date, end_date, initial_amount=0.0):
